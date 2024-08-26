@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original Pokedex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">       
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Handlee&family=Playwrite+BE+WAL:wght@100..400&family=VT323&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid">           
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 mt-4 p-5 bg-danger align-content-center">
+                <h1 class="display-1" style="text-align: center;  font-family: VT323, monospace">Welcome to the Original R/B/Y Pokedex!</h1>
+
+                <div id="carouselIndicators" class="carousel slide" data-bs-theme="dark">
+                    <div class="carousel-indicators">       
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/Images/pikachu.png" class="d-block w-50" alt="pikachu">      
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/Images/bulbasaur.png" class="d-block w-50" alt="bulbasaur">
+                        </div>
+                        <div class="carousel-item" >
+                            <img src="/Images/squirtle.png" class="d-block w-50" alt="squirtle">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/Images/charmander.png" class="d-block w-50" alt="charmander">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>                    
+                <p style=" font-size: 30px; padding-top: 20px; text-align: center; font-family: VT323, monospace">Listings on all 151 of the OG Pokemon!</p>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                </div>
+                <div class="col-8 text-center">             
+                    <a class="btn btn-outline-danger" id="detailsLink" role="button" href="details.html" style="font-family: VT323, monospace;">Search for Pokemon</a>
+                </div>
+            </div>
+
+
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-7"></div>
+        </div>
+    </div>
+    <script src="details.js"></script>
+    <footer style="text-align: center; font-family: VT323, monospace">
+        
+        &copy; 2024 Harrison Roberts <br>
+        All Rights Reserved <br>
+        <i>Violators will be captured in a Pokeball. /s</i>
+    </footer>
+</body>
+</html>
